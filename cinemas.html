@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/utility.css">
+    <script src="https://kit.fontawesome.com/dddde5021e.js" crossorigin="anonymous"></script>
+    <style>
+        .show, .nav-links input, .menu-icon {
+            display: none;
+        }
+
+        #menu-btn {
+                visibility: hidden;
+            }
+        @media all and (max-width: 968px) {
+            nav ul {
+                margin-right: 0;
+                float: left;
+            }
+
+            header .logo {
+                padding-left: 30px;
+                width: 30%;
+            }
+
+            header, nav ul li, nav ul ul li {
+                display: block;
+                width: 100%;
+            }
+
+            header .logo {
+                margin-top: 30px;
+                margin-bottom: 30px;
+                width: 20%;
+            }
+
+            nav ul ul {
+                top: 70px;
+                position: static;
+                border: none;
+                float: none;
+                display: none;
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .show {
+                display: block;
+                color: inherit;
+                padding: 0;
+                cursor: pointer;
+
+            }
+            .menu-icon {
+                display: block;
+                color: white;
+                right: 40px;
+                position: absolute;
+                line-height: 70px;
+                font-size: 25px;
+                cursor: pointer;
+                top: 30px;
+            }
+            .show + a, ul {
+                display: none !important;
+            }
+            #menu-btn {
+                visibility: hidden;
+            }
+
+            [id^=menu-btn]:checked + ul {
+                display: block !important;
+            }
+
+            .show:hover {
+                color: var(--grey);
+            }
+
+            .mb-15 {
+                margin-bottom: 15px;
+                margin-top: 15px;
+            }
+            
+        }
+    </style>
+    <title>Cinemas</title>
+</head>
+<body>
+    <header>
+        <a href="/"><img class="logo" src="/images//logo.png" alt="Logo"></a>
+        <nav>
+            <label for="menu-btn" class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </label>
+            <input type="checkbox" id="menu-btn">
+            <ul class="nav-links">
+                <li>
+                    <label for="menu-btn-1" class="show mb-15">About Us +</label>
+                    <a href="/about-us.html">About us</a>
+                    <input type="checkbox" id="menu-btn-1">
+                    <ul class="dropdown">
+                        <li><a href="/about-us.html">About Us</a></li>
+                        <li><a href="#">Our Strategy</a></li>
+                        <li><a href="#">Why Choose Us?</a></li>
+                        <li><a href="#">Chairman's Message</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <label for="menu-btn-2" class="show mb-15">Services +</label>
+                    <a href="/our-services.html">Services</a>
+                    <input type="checkbox" id="menu-btn-2">
+                    <ul class="dropdown">
+                        <li><a href="/cinemas.html">Cinemas</a></li>
+                        <li><a href="/acoustics.html">Acoustics</a></li>
+                        <li><a href="/interiors.html">Interior & Fitouts</a></li>
+                        <li><a href="/sounds.html">Sounds</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Modular Cinema</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Brochures</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="page-header cinemas-header">
+            <div class="page-title"><h1>Cinemas</h1></div>
+            <div class="page-breads">
+            <p><a href="/">Home</a> / Cinemas</p>
+        </div>
+    </div>
+    <section class="page-content">
+        <div class="grid cinema-container">
+            <div>
+                <h3>THE REAL CINEMA EXPERIENCE</h3>
+                <p>
+                    <b>Experience is Everything</b> – We have worked on many Home Cinema Designs and installations ranging from Traditional styles to modern Space Themes. We will transform your unique vision into a custom Home Theater that you will be proud to share with your friends and family. When people walk into your custom home theater, they will know it belongs to you.
+                </p>
+                <p>
+                    <b>One Size Does Not Fit All</b> – Your theater has it is own unique configuration. We analyze your room to determine the appropriate size and location of each acoustic panel. This results in a finished Home Theater that will sound great and look even better. To maximize your theaters potential, the room must be looked at by a home theater professional.
+                </p>
+                <p>
+                    <b>Think Outside The Box</b> – Do you want to create a theme for your Home Theater? We can create or obtain any resource needed to deliver your special theater. Maximizing the home theater experience entails more than just technical details, it requires an understanding of aesthetics and personal taste.
+                </p>
+                <p>
+                    <b>Think Outside The Box</b> – Do you want to create a theme for your Home Theater? We can create or obtain any resource needed to deliver your special theater. Maximizing the home theater experience entails more than just technical details, it requires an understanding of aesthetics and personal taste.
+                </p>
+                <p>
+                    <b>Seeing is Believing</b> – We offer free Photo Realistic 3-D Rendering of your Home Theater. The rendering will help you visualize (and realize) the potential of your theater. The renderings also help us to determine the proper size, quantity and location of the acoustic panels.
+                </p>
+                <p>
+                    Customizing a home cinema is similar to building a house. There is a thorough process to it, including numerous renderings if needed. In other words, you will never be left in the dark and informed at every step. The rendering will help you evaluate your custom design and make any necessary changes to ensure that you are 100% satisfied with your final cinema concept. After all, this is your Home Cinema!
+                </p>
+            </div>
+            <div>
+                <img src="/images/wwd-cinema.png" alt="">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="quick-links">
+                <h3 class="text-white">Quick Links</h3>
+                <ul class="footer-ul">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                </ul>
+            </div>
+            <div class="quick-links">
+                <h3 class="text-white">Other Links</h3>
+                <ul class="footer-ul">
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Brochures</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3 class="text-white">Stay Updated!</h3>
+                <label for="name">Name</label>
+                <input type="text" placeholder="Enter your name" name="name" id="name">
+                <label for="emai">Email</label>
+                <input type="email" placeholder="Enter your email">
+                <a href="#" class="sub-btn">Subscribe</a>
+            </div>
+        </div>
+    </footer>
+    <section class="footer-end">
+        <div class="copy">
+            <p>© Copyright 2021 - Martinville Acoustics</p>
+        </div>
+        <div class="socials">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+    </section>
+</body>
+<script src="js/app.js"></script>
+</html>

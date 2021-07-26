@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/utility.css">
+    <script src="https://kit.fontawesome.com/dddde5021e.js" crossorigin="anonymous"></script>
+    <style>
+        .show, .nav-links input, .menu-icon {
+            display: none;
+        }
+
+        #menu-btn {
+                visibility: hidden;
+            }
+        @media all and (max-width: 968px) {
+            nav ul {
+                margin-right: 0;
+                float: left;
+            }
+
+            header .logo {
+                padding-left: 30px;
+                width: 30%;
+            }
+
+            header, nav ul li, nav ul ul li {
+                display: block;
+                width: 100%;
+            }
+
+            header .logo {
+                margin-top: 30px;
+                margin-bottom: 30px;
+                width: 20%;
+            }
+
+            nav ul ul {
+                top: 70px;
+                position: static;
+                border: none;
+                float: none;
+                display: none;
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .show {
+                display: block;
+                color: inherit;
+                padding: 0;
+                cursor: pointer;
+
+            }
+            .menu-icon {
+                display: block;
+                color: white;
+                right: 40px;
+                position: absolute;
+                line-height: 70px;
+                font-size: 25px;
+                cursor: pointer;
+                top: 30px;
+            }
+            .show + a, ul {
+                display: none !important;
+            }
+            #menu-btn {
+                visibility: hidden;
+            }
+
+            [id^=menu-btn]:checked + ul {
+                display: block !important;
+            }
+
+            .show:hover {
+                color: var(--grey);
+            }
+
+            .mb-15 {
+                margin-bottom: 15px;
+                margin-top: 15px;
+            }
+            
+        }
+    </style>
+    <title>Our Services</title>
+</head>
+<body>
+    <header>
+        <a href="/"><img class="logo" src="/images//logo.png" alt="Logo"></a>
+        <nav>
+            <label for="menu-btn" class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </label>
+            <input type="checkbox" id="menu-btn">
+            <ul class="nav-links">
+                <li>
+                    <label for="menu-btn-1" class="show mb-15">About Us +</label>
+                    <a href="/about-us.html">About us</a>
+                    <input type="checkbox" id="menu-btn-1">
+                    <ul class="dropdown">
+                        <li><a href="/about-us.html">About Us</a></li>
+                        <li><a href="#">Our Strategy</a></li>
+                        <li><a href="#">Why Choose Us?</a></li>
+                        <li><a href="/about.html">Chairman's Message</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <label for="menu-btn-2" class="show mb-15">Services +</label>
+                    <a href="/our-services.html">Services</a>
+                    <input type="checkbox" id="menu-btn-2">
+                    <ul class="dropdown">
+                        <li><a href="/cinemas.html">Cinemas</a></li>
+                        <li><a href="/acoustics.html">Acoustics</a></li>
+                        <li><a href="/interiors.html">Interior & Fitouts</a></li>
+                        <li><a href="/sounds.html">Sounds</a></li>
+                    </ul>
+                </li>
+                <li><a href="/projects.html">Projects</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Modular Cinema</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="#">Brochures</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="page-header os-header">
+            <div class="page-title"><h1>Our Services</h1></div>
+            <div class="page-breads">
+            <p><a href="/">Home</a> / Our Services</p>
+        </div>
+    </div>
+    <section class="page-content">
+        <div class="os-container">
+            <div class="os-content">
+                <h3>INTERIORS</h3>
+                <p>With our own team of highly trained, multi-skilled projects operatives, we offer a multi-layered, bespoke service to all of our clients. We can work with you at all stages on Category A and B fit-outs.</p>
+                <img src="/images/wwd-cinema.png" alt="Home Cinema">
+                <div class="spacer-single"></div>
+                <a href="/interiors.html" class="btn-line btn-full">Read More ></a>
+            </div>
+            <div class="os-content">
+                <h3>ACOUSTICS</h3>
+                <p>Our team is comprised of professionals who specialize in solving almost any soundproofing problem. We’ve been in the noise control business for since 2006. Our team of professionals is…</p>
+                <img src="/images/wwd-acoustics.jpg" alt="Home Cinema">
+                <div class="spacer-single"></div>
+                <a href="/acoustics.html" class="btn-line btn-full">Read More ></a>
+            </div>
+            <div class="os-content">
+                <h3>CINEMAS</h3>
+                <p>Building a cinema is similar to building a house. There is a thorough process to it, including numerous renderings if needed. In other words, you will never be left in the dark and informed at every step.</p>
+                <img src="/images/wwd-interior.jpg" alt="Home Cinema">
+                <div class="spacer-single"></div>
+                <a href="/cinemas.html" class="btn-line btn-full">Read More ></a>
+            </div>
+            <div class="os-content">
+                <h3>SOUNDS</h3>
+                <p>Sound is not just a physical phenomenon. It is more! It inspires, evokes emotions and even helps to change the world for the better. That is why we are so passionate about sound. We constantly striving for… </p>
+                <img src="/images/wwd-interior.jpg" alt="Home Cinema">
+                <div class="spacer-single"></div>
+                <a href="/sounds.html" class="btn-line btn-full">Read More ></a>
+            </div>
+        </div>
+    </section>
+    <div class="gal-cta">
+        <a href="#" class="gal-cta-btn">Get Quotation <i class="fas fa-chevron-right"></i></a>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="quick-links">
+                <h3 class="text-white">Quick Links</h3>
+                <ul class="footer-ul">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about-us.html">About</a></li>
+                    <li><a href="/our-services.html">Services</a></li>
+                </ul>
+            </div>
+            <div class="quick-links">
+                <h3 class="text-white">Other Links</h3>
+                <ul class="footer-ul">
+                    <li><a href="/contact.html">Contact Us</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Brochures</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3 class="text-white">Stay Updated!</h3>
+                <label for="name">Name</label>
+                <input type="text" placeholder="Enter your name" name="name" id="name">
+                <label for="emai">Email</label>
+                <input type="email" placeholder="Enter your email">
+                <a href="#" class="sub-btn">Subscribe</a>
+            </div>
+        </div>
+    </footer>
+    <section class="footer-end">
+        <div class="copy">
+            <p>© Copyright 2021 - Martinville Acoustics</p>
+        </div>
+        <div class="socials">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+    </section>
+</body>
+<script src="js/app.js"></script>
+</html>

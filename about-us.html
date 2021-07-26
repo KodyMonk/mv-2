@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/utility.css">
+    <script src="https://kit.fontawesome.com/dddde5021e.js" crossorigin="anonymous"></script>
+    <style>
+        .show, .nav-links input, .menu-icon {
+            display: none;
+        }
+
+        #menu-btn {
+                visibility: hidden;
+            }
+        @media all and (max-width: 968px) {
+            nav ul {
+                margin-right: 0;
+                float: left;
+            }
+
+            header .logo {
+                padding-left: 30px;
+                width: 30%;
+            }
+
+            header, nav ul li, nav ul ul li {
+                display: block;
+                width: 100%;
+            }
+
+            header .logo {
+                margin-top: 30px;
+                margin-bottom: 30px;
+                width: 20%;
+            }
+
+            nav ul ul {
+                top: 70px;
+                position: static;
+                border: none;
+                float: none;
+                display: none;
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .show {
+                display: block;
+                color: inherit;
+                padding: 0;
+                cursor: pointer;
+
+            }
+            .menu-icon {
+                display: block;
+                color: white;
+                right: 40px;
+                position: absolute;
+                line-height: 70px;
+                font-size: 25px;
+                cursor: pointer;
+                top: 30px;
+            }
+            .show + a, ul {
+                display: none !important;
+            }
+            #menu-btn {
+                visibility: hidden;
+            }
+
+            [id^=menu-btn]:checked + ul {
+                display: block !important;
+            }
+
+            .show:hover {
+                color: var(--grey);
+            }
+
+            .mb-15 {
+                margin-bottom: 15px;
+                margin-top: 15px;
+            }
+            
+        }
+    </style>
+    <title>Martinville Acoustics</title>
+</head>
+<body>
+    <header>
+        <a href="/"><img class="logo" src="/images//logo.png" alt="Logo"></a>
+        <nav>
+            <label for="menu-btn" class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </label>
+            <input type="checkbox" id="menu-btn">
+            <ul class="nav-links">
+                <li>
+                    <label for="menu-btn-1" class="show mb-15">About Us +</label>
+                    <a href="/about-us.html">About us</a>
+                    <input type="checkbox" id="menu-btn-1">
+                    <ul class="dropdown">
+                        <li><a href="/about-us.html">About Us</a></li>
+                        <li><a href="#">Our Strategy</a></li>
+                        <li><a href="#">Why Choose Us?</a></li>
+                        <li><a href="/about.html">Chairman's Message</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <label for="menu-btn-2" class="show mb-15">Services +</label>
+                    <a href="#">Services</a>
+                    <input type="checkbox" id="menu-btn-2">
+                    <ul class="dropdown">
+                        <li><a href="/cinemas.html">Cinemas</a></li>
+                        <li><a href="/acoustics.html">Acoustics</a></li>
+                        <li><a href="/interiors.html">Interior & Fitouts</a></li>
+                        <li><a href="/sounds.html">Sounds</a></li>
+                    </ul>
+                </li>
+                <li><a href="/projects.html">Projects</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="https://modularcinema.com/">Modular Cinema</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="#">Brochures</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="page-header ph-about">
+            <div class="page-title"><h1>ABOUT US</h1></div>
+            <div class="page-breads">
+            <p><a href="/">Home</a> / About Us</p>
+        </div>
+    </div>
+    <section class="page-content">
+        <h3>WHO WE ARE</h3>
+        <p>
+            Martinville Acoustics,  a renowned company in the cinema sector has executed numerous cinemas in MENA region. We are Acoustic consultants providing turnkey construction solutions. With employees around the globe, we have designed and executed numerous turnkey projects around the region. We look forward to supporting the construction, acoustics, and design needs of the entertainment sector in the region.
+        </p>
+        <p>
+            The Organization has grown continually over the years by taking a professional approach  focusing on developing and providing only the highest quality of systems and services to clients.  We are currently undertaking turnkey projects with in-house capacities for specialized jobs in the field of  Acoustic Engineering, Sound Engineering, Cinemas, Civil/Structural, Engineering and Electromechanical engineering.  We are capable of providing Design,  Build  solutions to the construction and Entertainment industries in Middle East,  Africa and Asia.
+        </p>
+        <p>
+            We deliver high end technology, quality design, engineering, procurement, construction and project management services at good value and continually strengthen our solid reputation by providing practical and innovative technology and solutions to our valued clients in a most efficient and professional fashion. The organization thrives with offices across UAE, Bahrain, Oman, KSA, India, and Africa.
+        </p>
+        <p>
+            The scope of work involves specializing in survey, concept, development, planning, scheduling and execution of projects. A complete tailor made solution is provided for specific needs. We work with efficient and cost effective methods to provide the best in class services to our clients.
+        </p>
+    </section>
+    <div class="page-content">
+        <h3>WHY CHOOSE US?</h3>
+        <p>
+            When you work with our team at Martinville Acoustics, you are working with the most knowledgeable and experienced guys in the industry. Our commitment to better innovations shines through in everything we do. Whether you need to have that cinema experience right from your home, or you desire the best acoustic services and probably the perfect sound solution that you crave for, you have come to the right place. Our team is not only good at acoustically treating rooms and buildings of every type, we offer acoustic consultancy that provides you the right knowledge of what is best for your project. Best of all, we work within your budget! <br>
+            What sets us apart from our others is that we use only the most trusted and reliable products that are known to stand the test of time. Because we take pride in our work and stand behind every job we do, it is important to us that our customers are happy today, tomorrow and ten years from now. <br><br>
+            Contact us today and you will be amazed at what we can do!
+        </p>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="quick-links">
+                <h3 class="text-white">Quick Links</h3>
+                <ul class="footer-ul">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                </ul>
+            </div>
+            <div class="quick-links">
+                <h3 class="text-white">Other Links</h3>
+                <ul class="footer-ul">
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Brochures</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3 class="text-white">Stay Updated!</h3>
+                <label for="name">Name</label>
+                <input type="text" placeholder="Enter your name" name="name" id="name">
+                <label for="emai">Email</label>
+                <input type="email" placeholder="Enter your email">
+                <a href="#" class="sub-btn">Subscribe</a>
+            </div>
+        </div>
+    </footer>
+    <section class="footer-end">
+        <div class="copy">
+            <p>© Copyright 2021 - Martinville Acoustics</p>
+        </div>
+        <div class="socials">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+    </section>
+</body>
+<script src="js/app.js"></script>
+</html>
